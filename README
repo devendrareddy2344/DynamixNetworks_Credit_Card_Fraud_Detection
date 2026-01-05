@@ -1,0 +1,191 @@
+💳 Credit Card Fraud Detection – ML & Streamlit Application
+📌 Project Overview
+
+This project focuses on building an end-to-end Credit Card Fraud Detection system using Machine Learning.
+The model is trained on imbalanced transactional data and deployed using Streamlit to provide real-time fraud prediction.
+
+The system uses an Extra Trees Classifier, which performed best compared to other models due to its ability to handle complex patterns and imbalanced data effectively.
+
+🎯 Objectives
+
+Detect fraudulent credit card transactions accurately
+
+Handle highly imbalanced datasets
+
+Build a reliable and interpretable ML model
+
+Deploy the trained model as an interactive web application
+
+Enable real-time prediction for new transactions
+
+🧠 Machine Learning Approach
+✔ Data Challenges
+
+Severe class imbalance (fraud cases are very rare)
+
+High dimensional numerical features
+
+Need for strong recall on fraud class
+
+✔ Techniques Used
+
+StandardScaler for feature scaling
+
+SMOTE (Synthetic Minority Oversampling Technique) to balance data
+
+Extra Trees Classifier for robust classification
+
+Proper evaluation using Recall, F1-score, ROC-AUC
+
+🛠 Tech Stack
+Programming & Libraries
+
+Python
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+Imbalanced-learn (SMOTE)
+
+Visualization
+
+Matplotlib
+
+Seaborn
+
+Deployment
+
+Streamlit
+
+Model Persistence
+
+Pickle / Joblib
+
+🏗 Project Architecture
+Credit Fraud Detection Project
+│
+├── credit_fraud_pipeline.pkl     # Saved model + scaler
+├── credit_fraud_dection.py       # Model training script
+├── app.py                        # Streamlit application
+├── requirements.txt              # Dependencies
+└── README.md                     # Project documentation
+
+⚙️ Model Training Workflow
+
+Load dataset
+
+Separate features and target
+
+Perform stratified train-test split
+
+Apply feature scaling
+
+Balance training data using SMOTE
+
+Train Extra Trees Classifier
+
+Evaluate using classification metrics
+
+Save trained model and scaler
+
+📊 Model Evaluation Metrics
+
+Accuracy
+
+Precision
+
+Recall (Primary Focus)
+
+F1-Score
+
+ROC-AUC
+
+Confusion Matrix
+
+Recall is prioritized since missing a fraud transaction is more costly than false positives.
+
+🚀 Streamlit Web Application
+Features
+
+User-friendly input form for transaction details
+
+Real-time fraud prediction
+
+Fraud probability score
+
+Clear classification result (Fraud / Normal)
+
+Run the App
+streamlit run app.py
+
+🧪 Predicting New Data
+
+Loads saved model + scaler
+
+Applies identical preprocessing
+
+Generates prediction and probability
+
+Displays result instantly in UI
+
+📦 Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/credit-fraud-detection.git
+cd credit-fraud-detection
+
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the Streamlit App
+streamlit run app.py
+
+📈 Why Extra Trees Classifier?
+
+Handles imbalanced data effectively
+
+Reduces variance using randomness
+
+Fast training and prediction
+
+Provides feature importance
+
+Performs better than traditional models on tabular data
+
+🎓 Learning Outcomes
+
+Handling imbalanced datasets using SMOTE
+
+Model evaluation beyond accuracy
+
+Avoiding data leakage
+
+Saving and loading ML pipelines
+
+Deploying ML models using Streamlit
+
+End-to-end ML project lifecycle
+
+🔮 Future Enhancements
+
+Batch prediction using CSV upload
+
+Threshold tuning for recall optimization
+
+Model comparison dashboard
+
+API deployment using FastAPI/Flask
+
+Cloud deployment
+
+🏁 Conclusion
+
+This project demonstrates a complete real-world ML pipeline — from data preprocessing and model training to deployment and real-time prediction.
+It showcases practical skills in Machine Learning, Data Science, and Model Deployment.
+
+👤 Author
+
+Devendra Reddy
+Aspiring Data Scientist | Machine Learning Enthusiast
